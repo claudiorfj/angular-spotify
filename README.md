@@ -8,4 +8,4 @@ npm start
 ```
 
 ## Resultado final:
-<img src="https://github.com/claudiorfj/studies/blob/main/angular/angular-spotify/readme-image/spotifyAngular.png" width="600px"/>
+<img src="https://github.com/claudiorfj/angular-spotify/blob/main/readme-image/spotifyAngular.png" width="600px"/>
