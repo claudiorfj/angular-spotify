@@ -1,0 +1,29 @@
+@import 'variables';
+
+.container {
+    align-items: center;
+    cursor: pointer;
+    padding: 5px 0px;
+
+    &:hover {
+        background-color: rgba($background-dark-red, .2);
+    }
+
+    img {
+        width: 40px;
+        height: 43px;
+        border-radius: 50%;
+        flex-grow: 0;
+    }
+
+    span {
+        color: $main-light-red;
+        flex-grow: 1;
+        margin-left: 10px;
+        font-weight: 600;
+        font-size: .85rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}

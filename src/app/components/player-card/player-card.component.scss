@@ -1,0 +1,50 @@
+@import 'variables';
+
+.container {
+    width: 100%;
+    height: 100%;
+    max-width: 350px;
+		overflow: hidden;
+		display: flex;
+		flex-direction: column;
+
+		.image {
+			height: 70%;
+			background-position: top;
+			background-size: cover;
+			background-repeat: no-repeat;
+			opacity: 0.7;
+		}
+
+		.controls {
+			padding: 10px;
+			background-color: $background-dark-red;
+			flex-grow: 1;
+			color: $main-light-red;
+			
+			span {
+				font-size: 0.9rem;
+				font-weight: 700;
+			}
+
+			.buttons {
+				width: 100%;
+				height: 100%;
+				display: flex;
+				justify-content: space-evenly;
+				font-size: 1.8rem;
+
+				.middleButton {
+					font-size: 3rem;
+				}
+
+				.sideButton {
+					padding-top: 10px;
+				}
+				
+				* {
+					cursor: pointer;
+				}
+			}
+		}
+}

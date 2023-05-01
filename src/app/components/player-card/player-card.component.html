@@ -1,0 +1,30 @@
+<div class="container card p-10">
+    <div 
+        class="image" 
+        [style.background-image]="'url(' + track.album.imageUrl + ')'"
+        >
+    </div>
+    <div class="controls">
+        <span>{{ track.title }}</span>
+        <div class="buttons">
+          <fa-icon
+            class="sideButton" 
+            [icon]="previousIcon"
+            (click)="previousTrack()"
+            >
+          </fa-icon>
+          <fa-icon
+            class="middleButton" 
+            [icon]="pauseIcon"
+            (click)="playOrPauseTrack(track)"
+            >
+          </fa-icon>
+          <fa-icon 
+            class="sideButton" 
+            [icon]="nextIcon"
+            (click)="nextTrack()"
+            >
+          </fa-icon>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+<div class="card p-20">
+  <div class="artist flex">
+    <span class="title-bg mt-1">
+      {{ topArtist.name }}
+    </span>
+    <button class="follow">
+      Seguir
+    </button>
+
+    <fa-icon
+      class="playButton"
+      [icon]="playIcon"
+      >
+    </fa-icon>
+
+  </div>
+  <div class="image"
+    [style.background-image]="'url(' + topArtist.imageUrl + ')'"
+    >
+  </div>
+</div>

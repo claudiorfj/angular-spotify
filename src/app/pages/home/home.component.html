@@ -1,0 +1,43 @@
+<div class="my-tracks">
+  <span class="title-bg mt-4">
+    Seu Top Artista
+  </span>
+
+  <app-top-artist class="mt-2 d-block" ></app-top-artist>
+
+  <span class="title-bg mt-4">
+    Musicas Curtidas
+  </span>
+
+  <table class="table mt-3">
+    <thead>
+      <tr>
+        <th class="w-5">#</th>
+        <th class="w-25">Título</th>
+        <th class="w-25">Artista</th>
+        <th class="w-10 right">Tempo</th>
+        <th class="w-25">Album</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr 
+        *ngFor="let track of tracks" 
+        (click)="playTrack(track)"
+        [class.playing]="track.id === currentTrack.id"
+        >
+          <td>
+            <fa-icon class="play" [icon]="playIcon"></fa-icon>
+          </td>
+          <td>{{ track.title }}</td>
+          <td>{{ getArtists(track) }}</td>
+          <td class="right">{{ track.time }}</td>
+          <td>{{ track.album.name }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+  <app-right-panel 
+    class="right-panel">
+  </app-right-panel>

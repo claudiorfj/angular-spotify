@@ -1,0 +1,21 @@
+<div class="card p-20">
+    <div class="playlist flex">
+        <span class="title-bg">
+            {{ Text }}
+        </span>
+        <button class="follow">
+            Seguir
+          </button>
+      
+          <fa-icon
+            class="playButton"
+            [icon]="playIcon"
+            >
+          </fa-icon>
+      
+    </div>
+    <div class="image"
+        [style.background-image]="'url(' + ImageUrl +')'"
+    >
+    </div>
+</div>
